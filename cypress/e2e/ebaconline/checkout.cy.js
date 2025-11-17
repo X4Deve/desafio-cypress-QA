@@ -1,6 +1,7 @@
 import { slowCypressDown } from 'cypress-slow-down';
 
 describe('Fluxo de checkout - EBAC Shop', () => {
+  // aqui controla o tempo de execução
   slowCypressDown(1000);
 
   beforeEach(() => {
