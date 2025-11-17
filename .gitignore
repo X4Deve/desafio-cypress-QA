@@ -1,0 +1,28 @@
+# Dependências
+node_modules/
+
+# Ambiente local
+.env
+.env.local
+
+# Arquivos de log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Diretórios de output
+cypress/videos/
+cypress/screenshots/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs/Config
+.vscode/
+.idea/
+node modules
+
+.cypress-cache
+.DS_Store
