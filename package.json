@@ -1,0 +1,24 @@
+{
+  "name": "desafio-cypress-qa",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados E2E utilizando [Cypress](https://www.cypress.io/) para validar o fluxo de checkout da EBAC Shop (`http://lojaebac.ebaconline.art.br/`).",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "report:merge": "mochawesome-merge cypress/results/*.json > cypress/results/report.json",
+    "report:generate": "marge cypress/results/report.json --reportDir cypress/results --inline",
+    "test:report": "npm run cy:run && npm run report:merge && npm run report:generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "cypress": "^15.6.0",
+    "cypress-slow-down": "^1.3.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}
